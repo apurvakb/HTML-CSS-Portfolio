@@ -1,0 +1,254 @@
+<<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@900&family=Lato&display=swap');
+</style>
+<style>
+body {
+ 
+  background-color: #fafafa;
+
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+ padding: 0.5vw 4vw 0vw 4vw;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: #939393;
+  padding: 1vw 1vw 1vw 0;
+  text-decoration: none;
+  display: block;
+  font-size: 1vw;
+  font-family: "Segoe UI", Arial, sans-serif;
+
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  color: #939393 ;
+  text-decoration: line-through red 2px;
+}
+
+.text{
+	font-size: 2.2vw;
+	font-family: 'Bodoni Moda', serif;
+	font-weight: bolder;
+}
+.text1{
+	font-size: 4vw;
+	font-family: 'Bodoni Moda', serif;
+	font-weight: bolder;
+}
+
+.main {
+  margin-left: 23%; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+hr {
+  border: 1.4px solid red;
+  color: red;
+  width: 4vw;
+  align-self: left;
+  background-color: red;
+  
+}
+
+
+@media screen and (max-height: ) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 1vw;}
+}
+
+
+
+
+
+.column {
+  float: left;
+  width: 17%;
+  min-width: 10%;
+  margin-bottom: 16px;
+  padding: 0 1vw;
+  }
+
+@media screen and ( ) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius:20%;
+  padding:10%;
+}
+
+.container {
+  padding: 0 0.1vw;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+h3{
+    font-size: 1vw;
+    text-align: center;
+    object-fit: contain;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+img{
+border-radius:50%;
+
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  color: white;
+  background-color: #F21D59;
+  text-align: center;
+  font-size: 1vw;
+  cursor: pointer;
+  width: 8vw;
+  height: 3.2vw;
+  border-radius: 47px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+#p2{
+  font-size:1vw; 
+  padding-top: 7vw; 
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-align: justify; 
+  padding-right: 7vw; 
+  padding-left: 2vw;
+  color: #939393;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navhold">
+	<div class="sidenav">
+		<p class="text">Lorem <br>Ipsum</p>
+  		<a href="#">About</a>
+  		<a href="#">Services</a>
+  		<a href="#">Cuisine</a>
+  		<a href="#">Gallery</a>
+  		<a href="#">Contact</a>
+  		<a href="#">Book</a>
+  		
+    <button class="button" style="margin-top: 3vw;">Cart</button>
+	</div>
+</div>
+
+<div class="main" style="margin-top: 3vw;">
+  <div style="width: 100%;">
+        <div style="width: 70%; float: left;"> 
+            <p class="text1"> What are you <br> having for Lunch?</p> 
+        </div>
+        <div style="margin-left: 70%; height: auto;"> 
+            <p id="p2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta nibh nibh, et consectetur nulla aliquet eu. <hr style="margin-right: 6vw; margin-left: 2vw;"></p><br>
+        </div>
+    </div>
+    
+<div style="width: 100%;">
+
+
+<div class="row" style="margin-top: 5vw;">
+  <div class="column">
+    <div class="card">
+      <img src="https://www.thewholesomedish.com/wp-content/uploads/2019/06/The-Best-Classic-Tacos-550-500x500.jpg" alt="John" style="width:100%">
+      <div class="container">
+       <h3>Mexican Taco</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h3>Farmhouse Pizza</h3>
+      </div>
+    </div>
+  </div>
+  
+    <div class="column">
+    <div class="card">
+      <img src="https://www.jessicagavin.com/wp-content/uploads/2020/05/grilled-burgers-34-1200.jpg" alt="Jane" style="width:100%"> 
+      <div class="container">
+        <h3>Chicken Burger</h3>
+      </div>
+    </div>
+  </div>
+  
+    <div class="column">
+    <div class="card">
+      <img src="https://www.rachaelraymag.com/.image/t_share/MTczNjU5ODM4ODc2ODIxNDkw/loaded-shrimp-nachos-e4d4b8b9.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h3>Loaded Nachos</h3>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column" style="padding-right: 0;">
+    <div class="card"  >
+      <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2020/03/hakka-noodles-recipe-500x500.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h3>Hakka Noodles</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>    
+</div>
+   
+</body>
+</html> 
